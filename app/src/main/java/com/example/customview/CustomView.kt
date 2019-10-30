@@ -2,6 +2,7 @@ package com.example.customview
 
 import android.content.Context
 import android.graphics.Canvas
+import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
@@ -38,7 +39,8 @@ class CustomView : View {
 
     override fun draw(canvas: Canvas?) {
         super.draw(canvas)
-       canvas?.drawCircle(50f,50f,50f,paint)
+        canvas?.drawColor(Color.RED)
+        canvas?.drawCircle(50f, 50f, 50f, paint)
     }
 
 }
