@@ -26,8 +26,7 @@ class CustomView : View {
         context,
         attrs,
         defStyleAttr
-    ) {
-    }
+    )
 
     constructor(
         context: Context,
@@ -39,8 +38,31 @@ class CustomView : View {
 
     override fun draw(canvas: Canvas?) {
         super.draw(canvas)
+        paint.isAntiAlias = true
+//        canvas?.drawColor(Color.RED)
+        // 画园
         canvas?.drawColor(Color.RED)
         canvas?.drawCircle(50f, 50f, 50f, paint)
+
+        paint.style = Paint.Style.STROKE
+        canvas?.drawCircle(100 + 10 + 50f, 50f, 50f, paint)
+
+        paint.color = Color.BLUE
+        paint.style = Paint.Style.FILL
+        canvas?.drawRect(0f,120f,210f,180f,paint)
+
+        paint.strokeWidth = 15f
+        paint.strokeCap = Paint.Cap.ROUND
+        canvas?.drawPoint(200f,210f,paint)
+
+        paint.style = Paint.Style.FILL
+        canvas?.drawOval(0f,220f,210f,260f,paint)
+
+        paint.color = Color.GREEN
+        canvas?.drawLine(0f,300f,210f,390f,paint)
+
+        paint.color = Color.DKGRAY
+        canvas?.drawRoundRect(220f,0f,380f,110f,20f,20f,paint)
     }
 
 }
