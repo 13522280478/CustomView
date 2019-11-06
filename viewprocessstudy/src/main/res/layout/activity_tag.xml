@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.viewprocessstudy.TagLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="北京市"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特中期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特前期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="深圳市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="宁夏回族自治区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="香港特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="澳门特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="北京市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特中期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特前期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="河南省"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="深圳市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="宁夏回族自治区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="香港特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="澳门特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="北京市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特中期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="乌拉特前期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="河南省"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="深圳市"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="宁夏回族自治区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="香港特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.viewprocessstudy.ColorTextView
+        android:text="澳门特别行政区"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</com.example.viewprocessstudy.TagLayout>

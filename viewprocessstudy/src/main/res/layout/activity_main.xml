@@ -28,7 +28,7 @@
         android:layout_height="wrap_content">
 
         <com.example.viewprocessstudy.CircleView
-            android:layout_width="100dp"
+            android:layout_width="300dp"
             android:layout_height="100dp" />
     </LinearLayout>
 
