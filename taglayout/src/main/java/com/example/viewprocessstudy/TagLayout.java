@@ -34,11 +34,7 @@ public class TagLayout extends ViewGroup {
 
         for (int i = 0; i < getChildCount(); i++) {
             View child = getChildAt(i);
-
             measureChildWithMargins(child, widthMeasureSpec, 0, heightMeasureSpec, heightUsed);
-
-//            if (MeasureSpec.getMode(widthMeasureSpec ) != MeasureSpec.UNSPECIFIED&&
-//                    (widthUsed = child.getMeasuredWidth()) > MeasureSpec.getSize(widthMeasureSpec)){
             if (MeasureSpec.getMode(widthMeasureSpec) != MeasureSpec.UNSPECIFIED &&
                     lineWidthUsed + child.getMeasuredWidth() > widthSize) {
                 lineWidthUsed = 0;
@@ -68,11 +64,6 @@ public class TagLayout extends ViewGroup {
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         for (int i = 0; i < getChildCount(); i++) {
             View child = getChildAt(i);
-//            if (i % 2 == 0) {
-//                child.layout(0, 0, (r - l) / 2, (b - t) / 2);
-//            } else {
-//                child.layout((r - l) / 2, (b - t) / 2, r - l, b - t);
-//            }
             Rect childBounds = childrenBounds.get(i);
             child.layout(childBounds.left, childBounds.top, childBounds.right, childBounds.bottom);
         }
@@ -84,6 +75,12 @@ public class TagLayout extends ViewGroup {
         return new MarginLayoutParams(getContext(), attrs);
     }
 }
+
+//            if (i % 2 == 0) {
+//                child.layout(0, 0, (r - l) / 2, (b - t) / 2);
+//            } else {
+//                child.layout((r - l) / 2, (b - t) / 2, r - l, b - t);
+//            }
 
 //layoutParams.width;
 //        layoutParams.height;

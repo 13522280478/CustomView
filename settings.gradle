@@ -1,2 +1,2 @@
-include ':app', ':viewprocessstudy'
+include ':app', ':taglayout', ':touch'
 rootProject.name='CustomView'
