@@ -1,2 +1,2 @@
-include ':app', ':taglayout', ':touch'
+include ':app', ':taglayout', ':touch', ':scalable', ':util'
 rootProject.name='CustomView'
