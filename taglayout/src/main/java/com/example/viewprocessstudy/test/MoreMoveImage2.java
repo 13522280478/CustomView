@@ -30,7 +30,6 @@ public class MoreMoveImage2 extends View {
     private float downY;
     private int IMAGE_WIDTH = DimensionUtils.dp2Px(200);
     private Bitmap bitmap;
-    private int trackingPointerId;
 
     public MoreMoveImage2(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
