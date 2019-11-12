@@ -15,10 +15,10 @@ public class DrawUtils {
     public static Bitmap getAvatar(Resources res, int width) {
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(res, R.drawable.ic_share_wx_scene_time_line_back_w32_h28, options);
+        BitmapFactory.decodeResource(res, R.drawable.avatar_img, options);
         options.inJustDecodeBounds = false;
         options.inDensity = options.outWidth;
         options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(res, R.drawable.ic_share_wx_scene_time_line_back_w32_h28, options);
+        return BitmapFactory.decodeResource(res, R.drawable.avatar_img, options);
     }
 }
