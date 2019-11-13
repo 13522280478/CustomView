@@ -34,7 +34,7 @@ public class ScaleImageView extends View {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        offSetX = (getWidth() - bitmap.getHeight()) /2f;
+        offSetX = (getWidth() - bitmap.getWidth()) /2f;
         offSetY = (getHeight() - bitmap.getHeight()) /2f;
     }
 
