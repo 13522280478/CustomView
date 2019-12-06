@@ -36,6 +36,7 @@ public class DashboardView extends View {
     {
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(STROKE_WIDTH);
+
     }
 
     @Override
