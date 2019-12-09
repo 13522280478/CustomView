@@ -55,31 +55,28 @@ class ImageTextView : View {
         super.onDraw(canvas)
         mPaint.getTextBounds(str, 0, str.length, rectBounds)
         mPaint.textSize = 20.todp()
-//        val fl = (rectBounds.bottom - rectBounds.top) / 2
-
-        canvas?.drawBitmap(bitmap!!, width - IMAGE_WIDHT, IMAGE_OFFSET, mPaint)
+        val offX = width / 2 - IMAGE_WIDHT / 2
+        canvas?.drawBitmap(bitmap!!, offX, IMAGE_OFFSET, mPaint)
         var start = 0
         var count = 0
         var offsetY = mPaint.fontSpacing
         while (count < str.length) {
-            if (((offsetY + rectBounds.bottom) > IMAGE_OFFSET && offsetY + rectBounds.bottom <( IMAGE_WIDHT + IMAGE_OFFSET)) ||
-                ((rectBounds.top + offsetY )< IMAGE_OFFSET + IMAGE_WIDHT && (offsetY + rectBounds.top) > IMAGE_OFFSET)
-            ) {
-                count += mPaint.breakText(
-                    str,
-                    start,
-                    str.length,
-                    true,
-                    width.toFloat() - IMAGE_OFFSET,
-                    cutWidth
-                )
+            val isImage = (((offsetY + rectBounds.bottom) > IMAGE_OFFSET && offsetY + rectBounds.bottom < (IMAGE_WIDHT + IMAGE_OFFSET)) ||
+                        ((rectBounds.top + offsetY) < IMAGE_OFFSET + IMAGE_WIDHT && (offsetY + rectBounds.top) > IMAGE_OFFSET))
+            if (isImage) {
+                count += mPaint.breakText(str, start, str.length, true, offX, cutWidth)
             } else {
                 count += mPaint.breakText(str, start, str.length, true, width.toFloat(), cutWidth)
-
             }
+
             canvas?.drawText(str, start, count, 0f, offsetY, mPaint)
-            offsetY += mPaint.fontSpacing
             start = count
+            if (isImage && count < str.length) {
+                count += mPaint.breakText(str, start, str.length, true, offX, cutWidth)
+                canvas?.drawText(str, start, count, offX+IMAGE_WIDHT, offsetY, mPaint)
+                start = count
+            }
+            offsetY += mPaint.fontSpacing
         }
     }
 }

@@ -7,9 +7,9 @@
     android:clipChildren="false"
     tools:context=".MainActivity">
 
-    <com.example.customview.ImageTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+<!--    <com.example.customview.ImageTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
 
 
     <Button
@@ -26,19 +26,24 @@
     <!--        android:layout_height="wrap_content" />-->
 
 
-    <com.example.customview.ProgressView
-        android:id="@+id/pressVew"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+<!--    <com.example.customview.ProgressView-->
+<!--        android:id="@+id/pressVew"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp" />-->
 
-    <com.example.customview.UpdateProgressBar
-        android:id="@+id/updateBar"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+<!--    <com.example.customview.UpdateProgressBar-->
+<!--        android:id="@+id/updateBar"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <com.example.customview.ProgressText
+        android:id="@+id/progressText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>
