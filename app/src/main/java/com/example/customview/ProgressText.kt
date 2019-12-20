@@ -71,6 +71,8 @@ class ProgressText : View {
     }
 
     private fun drawTexts(canvas: Canvas) {
+        if (mDataList.isNullOrEmpty()) return
+
         val mTextWidth = width / mDataList.size
         var count = 0
         mDataList.forEach {
@@ -88,6 +90,7 @@ class ProgressText : View {
     }
 
     private fun drawTextBg(canvas: Canvas) {
+        if (mDataList.isNullOrEmpty()) return
         val mTextWidth = width / mDataList.size
         val mRight = mAnimOffX + mTextWidth
         canvas.drawRoundRect(
@@ -108,6 +111,8 @@ class ProgressText : View {
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
+        if (mDataList.isNullOrEmpty()) return false
+
         val mTextWidth = width / mDataList.size
         when (event?.actionMasked) {
             MotionEvent.ACTION_UP -> {

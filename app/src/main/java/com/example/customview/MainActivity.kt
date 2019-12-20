@@ -17,12 +17,41 @@ class MainActivity : AppCompatActivity() {
         list.add("我")
         list.add("和")
         list.add("你")
-        progressText.setDataList(list)
+//        progressText.setDataList(list)
 
 //        btStart.setOnClickListener {
 //            startRun()
 //        }
     }
+
+    fun findString(str:String,list:List<String>):List<String>{
+
+        val resList = mutableListOf<String>()
+
+        if (str.isNullOrEmpty()||list.isNullOrEmpty()) return resList
+
+        var isFirst = true
+        var index = 0
+
+        list.forEach{
+            if (str.contains(it)){
+                val indexOf = str.indexOf(it)
+                if (isFirst){
+                    index = indexOf
+                }else{
+                    resList.add(str.substring(index,indexOf))
+                    index = index
+                }
+            }
+        }
+        if (index!=0){
+            resList.add(str.substring(index,str.length))
+        }
+
+        return resList
+
+    }
+
 
 //    fun startRun() {
 //        val random = Random()
