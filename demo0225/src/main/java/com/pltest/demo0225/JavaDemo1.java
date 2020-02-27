@@ -7,4 +7,7 @@ package com.pltest.demo0225;
  * Email : yueshuai@pupupula.com
  */
 public class JavaDemo1 {
+    public static void main(String [] arr){
+        System.out.println("hello 33");
+    }
 }

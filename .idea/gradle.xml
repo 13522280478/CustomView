@@ -8,8 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/acttask" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/customtext0113" />
+            <option value="$PROJECT_DIR$/demo0214" />
+            <option value="$PROJECT_DIR$/demo0225" />
             <option value="$PROJECT_DIR$/scalable" />
             <option value="$PROJECT_DIR$/taglayout" />
             <option value="$PROJECT_DIR$/touch" />
