@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
@@ -14,6 +17,8 @@
             <option value="$PROJECT_DIR$/demo0214" />
             <option value="$PROJECT_DIR$/demo0225" />
             <option value="$PROJECT_DIR$/demo0227" />
+            <option value="$PROJECT_DIR$/demo0624" />
+            <option value="$PROJECT_DIR$/myinterviewtest" />
             <option value="$PROJECT_DIR$/scalable" />
             <option value="$PROJECT_DIR$/taglayout" />
             <option value="$PROJECT_DIR$/touch" />
@@ -21,7 +26,6 @@
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
-        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>
