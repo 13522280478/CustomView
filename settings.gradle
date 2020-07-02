@@ -2,3 +2,4 @@ include ':app', ':taglayout', ':touch', ':scalable', ':util', ':customtext0113',
 rootProject.name='CustomView'
 include ':myinterviewtest'
 include ':demo0624'
+include ':java0628'
